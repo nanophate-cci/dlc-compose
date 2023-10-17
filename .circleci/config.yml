@@ -10,4 +10,5 @@ jobs:
     steps:
       - checkout
       - run: docker images -a
-      - run: docker-compose --verbose up
+      - run: docker-compose --verbose build
+      - run: docker-compose --verbose build --no-cache
