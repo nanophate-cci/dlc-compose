@@ -12,4 +12,4 @@ jobs:
       - run: docker images -a
       - run: docker-compose --verbose build
       - run: docker-compose --verbose build --no-cache
-      - run: docker image -a
+      - run: docker images -a
